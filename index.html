@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    p {
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 80%;
+      max-width: 400px;
+      padding: 15px;
+      margin: 10px auto;
+      font-size: 1.2em;
+      border-radius: 5px;
+      border: 1px solid #bdc3c7;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+      font-size: 1em;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>welcome to our new web</h1>
+  <h1>Welcome to our new web</h1>
 
-    <button>Click Me</button>
+  <button id="clickBtn">Click Me</button>
 
-    <h2>This is where we end</h2>
-    <h1>hi group members</h1>
+  <h2>This is where we end</h2>
+  <h1>Hi group members</h1>
+
+  <h1>Robotic website</h1>
+
+  <input type="text" placeholder="Enter your name" />
+  <input type="password" placeholder="Enter your password" />
+  <button id="submitBtn">Submit</button>
+
+  <h2>Thank you for visiting!</h2>
+  <p>Feel free to explore more.</p>
+
+  <footer>
+    <p>&copy; 2023 Your Company</p>
+  </footer>
+
+  <script>
+    document.getElementById('clickBtn').addEventListener('click', function () {
+      alert('Button clicked!');
+    });
+
+    document.querySelector('input[type="text"]').addEventListener('input', function () {
+      console.log('Text input changed:', this.value);
+    });
+
+    document.querySelector('input[type="password"]').addEventListener('input', function () {
+      console.log('Password input changed:', this.value);
+    });
+  </script>
 </body>
 
 </html>
